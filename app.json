@@ -5,7 +5,7 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "automatic",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
@@ -13,6 +13,9 @@
     },
     "updates": {
       "fallbackToCacheTimeout": 0
+    },
+    "packagerOpts": {
+      "sourceExts": ["cjs"]
     },
     "assetBundlePatterns": [
       "**/*"
@@ -28,6 +31,15 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Extrash needs access to your photos to let you share with the rider.",
+          "cameraPermission": "Extrash needs access to your camera let you share them with your friends."
+        }
+      ]
+    ]
   }
 }
