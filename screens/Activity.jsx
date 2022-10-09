@@ -49,7 +49,7 @@ const Activity = () => {
         if (req2) {
           reqArr2 = Object.keys(req2).map((key) => {  //convert object data retrieved from firebase into array
             return {
-              [key]: req1[key]
+              [key]: req2[key]
             }
           });
         }
@@ -57,7 +57,7 @@ const Activity = () => {
         if (req3) {
          reqArr3 = Object.keys(req3).map((key) => {  //convert object data retrieved from firebase into array
             return {
-              [key]: req1[key]
+              [key]: req3[key]
             }
           });
         }

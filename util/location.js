@@ -1,4 +1,4 @@
-const GOOGLE_API_KEY = 'AIzaSyAW-V3dsv7AM8QFR1eCC3qAjBa0LfiE2MU'
+const GOOGLE_API_KEY = 'AIzaSyDlu5B3B_eZi-2Ub1AeC_eTTL0qwlWQZ5I'
 
 
 export function getMapPreview({ lat, lng }) {
@@ -16,6 +16,7 @@ export async function getAddress(lat, lng) {  //reverse geocode api
     }
 
     const data= await response.json(); //convert a json javascript object
+    console.log(data,123);
     const address = data.results[0].formatted_address;
     return address;
 }
