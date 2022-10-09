@@ -10,3 +10,8 @@ Steps to view the demo :
 6. Run ```expo start``` and wait for the QR code to appear.
 7. Scan the QR code using the phone (with same wifi network and expo go app).
 
+- Note : Google Map Geolocation token might have expired after a few months of activation
+
+- Link view the demo : 
+- https://devpost.com/software/orchid-4p5tej
+

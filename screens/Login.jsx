@@ -63,7 +63,7 @@ const Login = ({ navigation }) => {
             <View style={styles.screen}>
                 <View style={styles.logoContainer}>
                     <Image style={styles.logo} source={require('../assets/emoji/logoo.png')} />
-                    <Text style={styles.logoText}>Extrash</Text>
+                    <Text style={styles.logoText}>Trashycle</Text>
                 </View>
                 <View style={styles.formContainer}>
                     <AuthForm

@@ -82,10 +82,7 @@ const SignUp = ({ navigation }) => {
             return
         }
         try {
-            // const uid = await createUser(enteredEmail, enteredPassword);
             const uid = await signUp(enteredEmail, enteredPassword)
-            // authCtx.authenticate(uid);
-            // console.log('fetched uid is', uid);
             const response = await createProfile(uid, authCtx.userType, enteredEmail, enteredPassword, username, phoneNumber, dob)
             Alert.alert('Successful!', 'Account has been created, press the button to go back to the sign in page', [{
                 text: 'Sign in now',

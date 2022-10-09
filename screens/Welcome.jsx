@@ -20,7 +20,7 @@ const Welcome = ({ navigation }) => {
 
     return (
         <View style={styles.screen}>
-            <Text style={styles.title}>Welcome to Extrash!</Text>
+            <Text style={styles.title}>Welcome to Trashycle!</Text>
             <Text style={styles.text}>Let us know who you are to view the correct experience for you.</Text>
             <Pressable style={styles.buttonContainer} onPress={onPressUser}>
                 <View style={styles.iconContainer}>
